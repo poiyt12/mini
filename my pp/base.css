@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "YESMyoungjo-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YESMyoungjo-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.font {
+  font-family: "YESMyoungjo-Regular";
+}
+body {
+  height: 300vh;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.head {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0px;
+  margin: 0px auto;
+  z-index: 3;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.box1 {
+  color: silver;
+  width: 1200px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .box1 {
+    flex-direction: column;
+  }
+}
+.logo {
+  font-size: 40px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.contents {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.contents > li {
+  padding: 10px;
+}
+.contents > li:hover {
+  background-color: silver;
+  color: black;
+  border-radius: 5px;
+  opacity: 0.8;
+}
